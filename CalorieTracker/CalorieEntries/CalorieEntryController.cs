@@ -16,9 +16,6 @@ public class CalorieEntryController : ControllerBase
         _calorieEntryService = calorieEntryService;
     }
 
-    // <summary>
-    // this is a summary
-    // </summary>
     [HttpGet]
     [Route("get")]
     public async Task<IActionResult> Get(int? id, CancellationToken cancellationToken)
