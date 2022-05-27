@@ -42,7 +42,7 @@ namespace CalorieTracker.Api.FoodTypes
 
         [HttpPost]
         [Route("create")]
-        public async Task<IActionResult> Post([FromBody] CreateFoodTypeRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Post([FromForm] CreateFoodTypeRequest request, CancellationToken cancellationToken)
         {
             var dto = FoodTypeMapper.MapToCreateDto(request);
             var newId =  await _foodTypeService.CreateFoodType(dto, cancellationToken);
@@ -52,7 +52,7 @@ namespace CalorieTracker.Api.FoodTypes
 
         [HttpPost]
         [Route("update")]
-        public async Task<IActionResult> Update([FromBody] UpdateFoodTypeRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> Update([FromForm] UpdateFoodTypeRequest request, CancellationToken cancellationToken)
         {
             var dto = FoodTypeMapper.MapToUpdateDto(request);
             await _foodTypeService.UpdateFoodType(dto, cancellationToken);

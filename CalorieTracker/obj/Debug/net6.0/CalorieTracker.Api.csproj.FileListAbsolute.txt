@@ -68,3 +68,8 @@ C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\EmptyConstructor.dll
 C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Virtuosity.dll
 C:\source\CalorieTracker\CalorieTracker\obj\Debug\net6.0\refint\CalorieTracker.Api.dll
 C:\source\CalorieTracker\CalorieTracker\obj\Debug\net6.0\ref\CalorieTracker.Api.dll
+C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\source\CalorieTracker\CalorieTracker\bin\Debug\net6.0\Swashbuckle.AspNetCore.Newtonsoft.dll

@@ -13,12 +13,13 @@ public static class DependencyInjection
 
         var assembliesToScan = new[]
         {
+            Assembly.GetExecutingAssembly(),
             Assembly.GetAssembly(typeof(ICalorieEntryRepository)),
             Assembly.GetAssembly(typeof(ICalorieEntryService))
         };
 
         var results = service.RegisterAssemblyPublicNonGenericClasses(assembliesToScan)
-            .Where(c => c.Name.EndsWith("Service") || c.Name.EndsWith("Repository"))
+            .Where(c => c.Name.EndsWith("Service") || c.Name.EndsWith("Repository") || c.Name.EndsWith("Mapper"))
             .AsPublicImplementedInterfaces();
     }
 }

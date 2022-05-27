@@ -5,16 +5,19 @@ namespace CalorieTracker.Domain.CalorieEntries;
 
 public class CalorieEntry : DomainEntity
 {
-    public string Description { get; private set; } = null!;
+    public string FoodTypeName { get; private set; } = null!;
     public int FoodTypeId { get; private set; }
-    public int Quantity { get; private set; }
+    public double Quantity { get; private set; }
+    public double Calories { get; private set; }
     public DateTime Date { get; private set; }
 
-    public CalorieEntry(CreateUpdateCalorieEntryDto dto)
+    public CalorieEntry(CreateCalorieEntryDto dto)
     {
-        Description = dto.Description;
+        var foodType = dto.FoodType;
+        FoodTypeName = foodType.Name;
         FoodTypeId = dto.FoodTypeId;
         Quantity = dto.Quantity;
+        Calories = foodType.CaloriesPerUnit * Quantity;
         Date = dto.Date;
         CreatedOn = DateTime.UtcNow;
     }

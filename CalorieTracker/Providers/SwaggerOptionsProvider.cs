@@ -15,7 +15,7 @@ public static class SwaggerOptionsProvider
                 Title = "CalorieTracker API",
                 Description = "A sample ASP.NET Web API for tracking calories and food types."
             });
-
+            
             var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename), includeControllerXmlComments: true);
         });

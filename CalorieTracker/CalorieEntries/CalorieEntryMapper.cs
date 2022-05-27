@@ -1,15 +1,31 @@
 ﻿using CalorieTracker.Api.CalorieEntries.Requests;
 using CalorieTracker.Domain.CalorieEntries.DTO;
+using CalorieTracker.Service.CalorieEntries;
+using CalorieTracker.Service.FoodTypes;
 
 namespace CalorieTracker.Api.CalorieEntries
 {
-    public static class CalorieEntryMapper
+    public interface ICalorieEntryMapper
     {
-        public static CreateUpdateCalorieEntryDto MapToCreateDto(CreateCalorieEntryRequest request)
+        Task<CreateCalorieEntryDto> MapToCreateDto(CreateCalorieEntryRequest request, CancellationToken cancellationToken);
+    }
+
+    public class CalorieEntryMapper : ICalorieEntryMapper
+    {
+        private IFoodTypeService _service;
+
+        public CalorieEntryMapper(IFoodTypeService service)
         {
-            return new CreateUpdateCalorieEntryDto
+            _service = service;
+        }
+
+        public async Task<CreateCalorieEntryDto> MapToCreateDto(CreateCalorieEntryRequest request, CancellationToken cancellationToken)
+        {
+            var foodType = await _service.GetFoodTypeById(request.FoodTypeId, cancellationToken);
+
+            return new CreateCalorieEntryDto
             {
-                Description = request.Description,
+                FoodType = foodType,
                 FoodTypeId = request.FoodTypeId,
                 Date = request.Date,
                 Quantity = request.Quantity

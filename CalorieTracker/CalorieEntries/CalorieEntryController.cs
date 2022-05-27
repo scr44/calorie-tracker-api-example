@@ -5,15 +5,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CalorieTracker.Api.CalorieEntries;
 
-[Route("api/[controller]")]
+[Route("api/calorie-entry")]
 [ApiController]
 public class CalorieEntryController : ControllerBase
 {
     private readonly ICalorieEntryService _calorieEntryService;
+    private readonly ICalorieEntryMapper _calorieEntryMapper;
 
-    public CalorieEntryController(ICalorieEntryService calorieEntryService)
+    public CalorieEntryController(ICalorieEntryService calorieEntryService, ICalorieEntryMapper calorieEntryMapper)
     {
         _calorieEntryService = calorieEntryService;
+        _calorieEntryMapper = calorieEntryMapper;
     }
 
     [HttpGet]
@@ -42,9 +44,9 @@ public class CalorieEntryController : ControllerBase
 
     [HttpPost]
     [Route("create")]
-    public async Task<IActionResult> Post([FromBody] CreateCalorieEntryRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> Post([FromForm] CreateCalorieEntryRequest request, CancellationToken cancellationToken)
     {
-        var dto = CalorieEntryMapper.MapToCreateDto(request);
+        var dto = await _calorieEntryMapper.MapToCreateDto(request, cancellationToken);
         var result = await _calorieEntryService.CreateCalorieEntry(dto, cancellationToken);
 
         return Ok(result);

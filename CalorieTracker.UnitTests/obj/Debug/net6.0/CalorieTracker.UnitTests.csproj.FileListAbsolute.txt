@@ -149,3 +149,7 @@ C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\CalorieTracke
 C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\CalorieTracker.Api.xml
 C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\CalorieTracker.Domain.pdb
 C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\CalorieTracker.Infrastructure.pdb
+C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\source\CalorieTracker\CalorieTracker.UnitTests\bin\Debug\net6.0\Swashbuckle.AspNetCore.Newtonsoft.dll

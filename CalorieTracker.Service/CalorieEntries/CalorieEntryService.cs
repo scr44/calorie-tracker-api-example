@@ -7,7 +7,7 @@ public interface ICalorieEntryService
 {
     Task<List<CalorieEntry>> GetAllCalorieEntries(CancellationToken cancellationToken);
     Task<CalorieEntry> GetCalorieEntryById(int id, CancellationToken cancellationToken);
-    Task<int> CreateCalorieEntry(CreateUpdateCalorieEntryDto dto, CancellationToken cancellationToken);
+    Task<int> CreateCalorieEntry(CreateCalorieEntryDto dto, CancellationToken cancellationToken);
     Task DeleteCalorieEntry(int id, CancellationToken cancellationToken);
 }
 
@@ -33,7 +33,7 @@ public class CalorieEntryService : ICalorieEntryService
         return await Repository.GetById(id, cancellationToken);
     }
 
-    public async Task<int> CreateCalorieEntry(CreateUpdateCalorieEntryDto dto, CancellationToken cancellationToken)
+    public async Task<int> CreateCalorieEntry(CreateCalorieEntryDto dto, CancellationToken cancellationToken)
     {
         return await Repository.Create(new CalorieEntry(dto), cancellationToken);
     }
