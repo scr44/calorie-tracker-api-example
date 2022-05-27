@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieTracker.Api", "CalorieTracker\CalorieTracker.Api.csproj", "{2DE3B67A-FC97-4570-861B-5FD0F0588E7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4ECA0596-EAC9-454D-BEDA-D44DE56AABED} = {4ECA0596-EAC9-454D-BEDA-D44DE56AABED}
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5} = {77F35296-0B29-45F9-BF3B-17237E2B0DC5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieTracker.Domain", "CalorieTracker.Domain\CalorieTracker.Domain.csproj", "{77F35296-0B29-45F9-BF3B-17237E2B0DC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieTracker.UnitTests", "CalorieTracker.UnitTests\CalorieTracker.UnitTests.csproj", "{414D0CAD-0316-4495-A5C8-02783DF6C4D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5} = {77F35296-0B29-45F9-BF3B-17237E2B0DC5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieTracker.Infrastructure", "CalorieTracker.Infrastructure\CalorieTracker.Infrastructure.csproj", "{4ECA0596-EAC9-454D-BEDA-D44DE56AABED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5} = {77F35296-0B29-45F9-BF3B-17237E2B0DC5}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieTracker.Service", "CalorieTracker.Service\CalorieTracker.Service.csproj", "{FC86CBD9-2927-41E2-8243-49E38CA119B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0CC9651C-D4E0-4106-8CCB-B89054FBE276}"
+	ProjectSection(SolutionItems) = preProject
+		database.db = database.db
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DE3B67A-FC97-4570-861B-5FD0F0588E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE3B67A-FC97-4570-861B-5FD0F0588E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE3B67A-FC97-4570-861B-5FD0F0588E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE3B67A-FC97-4570-861B-5FD0F0588E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77F35296-0B29-45F9-BF3B-17237E2B0DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{414D0CAD-0316-4495-A5C8-02783DF6C4D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414D0CAD-0316-4495-A5C8-02783DF6C4D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414D0CAD-0316-4495-A5C8-02783DF6C4D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414D0CAD-0316-4495-A5C8-02783DF6C4D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECA0596-EAC9-454D-BEDA-D44DE56AABED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECA0596-EAC9-454D-BEDA-D44DE56AABED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECA0596-EAC9-454D-BEDA-D44DE56AABED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECA0596-EAC9-454D-BEDA-D44DE56AABED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC86CBD9-2927-41E2-8243-49E38CA119B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC86CBD9-2927-41E2-8243-49E38CA119B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC86CBD9-2927-41E2-8243-49E38CA119B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC86CBD9-2927-41E2-8243-49E38CA119B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FB76136-2E34-4055-8A39-A371A03E28A0}
+	EndGlobalSection
+EndGlobal

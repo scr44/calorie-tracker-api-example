@@ -1,0 +1,17 @@
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Infrastructure.deps.json
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Infrastructure.runtimeconfig.json
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Infrastructure.dll
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Infrastructure.pdb
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Domain.dll
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\bin\Debug\net6.0\CalorieTracker.Domain.pdb
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.csproj.AssemblyReference.cache
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.AssemblyInfoInputs.cache
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.AssemblyInfo.cs
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.csproj.Fody.CopyLocal.cache
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.csproj.Fody.RuntimeCopyLocal.cache
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.csproj.CopyComplete
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.dll
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.pdb
+C:\source\CalorieTracker\CalorieTracker.Infrastructure\obj\Debug\net6.0\CalorieTracker.Infrastructure.genruntimeconfig.cache
