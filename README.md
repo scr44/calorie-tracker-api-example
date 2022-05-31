@@ -17,7 +17,7 @@ A sample project that allows users to record types of food, food calories, and c
 
 ## Frontend
 - Scaffolded with [Vite](https://vitejs.dev/)
+- Store using [Pinia](https://pinia.vuejs.org/)
 - IN PROGRESS: [Vue 3](https://vuejs.org/) single-page application using the [Composition API](https://vuejs.org/guide/introduction.html#api-styles)
 - IN PROGRESS: [Vue router](https://router.vuejs.org)
-- COMING SOON: Store using [Pinia](https://pinia.vuejs.org/)
 - COMING SOON: Grid/UI components from [SyncFusion](https://www.syncfusion.com/)
