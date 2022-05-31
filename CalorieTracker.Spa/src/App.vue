@@ -2,14 +2,14 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { useRoute } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
+import FoodList from "./FoodList/FoodList.vue";
 
-let currentRoute = computed(() => {
-  return useRoute().name;
-})
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <FoodList/>
 </template>
 
 <style>
